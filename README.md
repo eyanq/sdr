@@ -18,5 +18,4 @@ Hope it helps for OpenCV beginners.
 
 >>> cv2.__version__
 '3.0.0'
-
 ```
