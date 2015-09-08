@@ -3,7 +3,6 @@
 __author__ = 'yan9yu'
 
 import sys
-
 import numpy as np
 import cv2
 
@@ -49,5 +48,6 @@ print "training complete"
 samples = np.float32(samples)
 responses = np.float32(responses)
 
+cv2.imwrite("../data/train_result.png", im)
 np.savetxt('../data/generalsamples.data', samples)
 np.savetxt('../data/generalresponses.data', responses)
