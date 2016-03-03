@@ -1,19 +1,19 @@
-Simple Digit Recognition OCR in OpenCV-Python
+Simple Digit Recognition OCR in OpenCV Python
 =============================================
 
 This code is originally based on Abid Rahman K's answer in [Simple Digit Recognition OCR in OpenCV-Python](http://stackoverflow.com/questions/9413216/simple-digit-recognition-ocr-in-opencv-python/9620295).
 
-Several tiny modification has been made to adapt to OpenCV's new API.
+Several tiny modification has been made to adapt OpenCV's new API.
 
 Hope it helps for OpenCV newbies.
 
 
 ### Progress
-1. Run `train.py`, label the number surrounded with red rectangle *manually*. The labeled result will seems like 
+Run `train.py`, label the number surrounded with red rectangle **manually**. The labeled result will seems like 
 
 ![Train Result](/data/train_result.png)
 
-2. Run `test.py`, the program will load the test image and automatically recognize digits using `KNearNeighbour` Algorithm. The results will seem like
+Run `test.py`, the program will load the test image and automatically recognize digits using `KNearNeighbour` Algorithm. The results will seem like
 
 Labeled Test Image
 
