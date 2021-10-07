@@ -28,7 +28,7 @@ for cnt in contours:
 
         if h > 28:
 
-            cv2.rectangle(im, (x, y), (x + w, y + h), (0, 0, 255), 2)
+            cv2.rectangle(im, (x, y), (x + w, y + h), (255, 0, 0), 2)
             roi = thresh[y:y + h, x:x + w]
             roismall = cv2.resize(roi, (10, 10))
             cv2.imshow('norm', im)
@@ -40,7 +40,7 @@ for cnt in contours:
                 responses.append(int(chr(key)))
                 sample = roismall.reshape((1, 100))
                 samples = np.append(samples, sample, 0)
-
+            cv2.rectangle(im, (x, y), (x + w, y + h), (0, 0, 255), 2)
 responses = np.array(responses, np.float32)
 responses = responses.reshape((responses.size, 1))
 print "training complete"
